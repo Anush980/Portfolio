@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styling.css" />
+    <script src="https://kit.fontawesome.com/77705145e1.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+
+    <div class="light" id="light">
+     <!-- background animation -->
+    </div>
+
+
+  <!-- header navigation starts here -->
+    <header class="header">
+      <div class="navContent">
+        <div class="leftLogo">
+          <a href="index.html"><h1>Anush.</h1></a>
+        </div>
+        <div class="rightNav">
+          <nav>
+            <div class="hamburger" id="hamburger" onclick="hamburgerAction()">
+              <span></span>
+              <span></span>
+              <span></span> 
+              
+            </div>
+            <ul id="menu" class="menu">
+              <a href="#hero"><li class="navItem active" onclick="changeActive(0)">Home</li></a>
+              <a href="#about"><li class="navItem" onclick="changeActive(1)">About</li></a>
+              <a href="#skills"><li class="navItem" onclick="changeActive(2)">Skills</li></a>
+              <a href="#contact"><li class="navItem" onclick="changeActive(3)">Contact</li></a>
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- hero starts -->
+    <section class="hero" id="hero">
+      <div class="left">
+        <h1>Hi, I'm <span>Anush Shrestha</span></h1>
+        <div class="heroAnimate">
+          <h3>NOOB Programmer</h3>
+        </div>
+        <p>
+          Mostly Passionate about programming, I have experience in HTML, CSS, and foundational knowledge of Java, C, and SQL queries. Hailing from Nepal, I thrive on exploring new challenges and creating impactful solutions through code.
+        </p>
+        <div class="buttonBox">
+          <a href="./Resources/CV.pdf" target="_blank" class="btn">Download CV</a>
+        
+        </div>
+        <div class="socialLinks">
+              <a href="https://www.facebook.com/Anush232" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+              <a href="https://www.instagram.com/_anush232" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>   
+              <a href="https://www.github.com/Anush980" target="_blank"><i class="fab fa-github fa-2x"></i></a> 
+              <a href="https://www.linkedin.com/in/anush232" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a> 
+        </div>
+        </div>
+
+
+        <!-- right div starts here -->
+         <div class="right">
+            <div class="heroLogo">
+             
+                <div class="circle">
+                  <!-- <img src="../Resources/profile.jpg"> -->
+          
+            
+              </div>
+         </div>
+      </div>
+    </section>
+
+
+  <!-- About section starts here -->
+  <section class="about" id="about">
+    <div class="title">
+      <h1>About <span>Me</span></h1>
+    </div>
+
+   
+   <div class="container">
+    <div class="left">
+      <div class="logo">
+      <div class="circle">
+        <!-- <img src="/Resources/profile.jpg"> -->
+      </div>
+
+      </div>
+    </div>
+    <div class="right">
+      
+      <div class="aboutme">
+        <h1>NOOB Programmer</h1>
+       <p>
+         Mostly Passionate about programming and continuously striving to expand my skills, I am a dedicated BCA student from Nepal with a strong foundation in coding. I have hands-on experience with HTML and CSS, enabling me to craft engaging and responsive web designs, as well as foundational knowledge in Java, C, and SQL queries, which I use to develop functional applications and manage data efficiently.
+
+       </p>
+      </div>
+      <div class="buttonBox">
+        <a href="#hero" class="btn">Read More</a>
+      
+      </div>
+   </div>
+  </section> 
+
+
+   <!-- skills sections starts from here -->
+   <section class="skills" id="skills">
+    <div class="title"> 
+      <h1><span>My</span> Skills</h1>
+    </div>
+  
+    <div class="box">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Experienced in creating semantic and accessible web content using HTML.</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Skilled in designing responsive layouts and animations with CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Java</h3>
+            <p>knowledge in building applications and solving problems with Java.</p>
+        </div>
+        <div class="card">
+            <h3>C</h3>
+            <p>Decent knowledge of the C language for system-level programming.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- contact section starts from here -->
+    <section class="contacts" id="contact">
+      <div class="contact">
+      <div class="contact-info">
+        <h2><span>Contact</span> Me</h2>
+        <p><strong>Email:</strong> anush.stha232@gmail.com</p>
+        <p><strong>Phone:</strong> +977 9826999469</p>
+        <p><strong>Location:</strong> Nepal</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/Anush232" target="_blank"
+            ><i class="fa fa-facebook-official fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/_anush232" target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.github.com/Anush980" target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/anush232" target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact-box">
+        <h2>Get In Touch</h2>
+        <p>
+          Have a project in mind or just want to say hello? Drop me a message!
+        </p>
+        <form action="#">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>
+<script src="script.js"></script>
