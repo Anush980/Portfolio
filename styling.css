@@ -19,8 +19,8 @@
     --box-shadow-hover: rgba(0, 255, 255, 0.563);
 }
 html {
-  overflow:hidden;
-  /* overflow: none; */
+  /* overflow:hidden; */
+  overflow: none;
   scroll-behavior: smooth;
 }
 body {
@@ -265,24 +265,46 @@ body {
   color: var(--background-color);
   white-space: noWrap;
 }
+
+/* Education section starts from here */
+.education {
+  padding: 8rem 1rem;
+  text-align: center;
+}
+.education .title h1 span {
+  color:white;
+}
+.education h1{
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 5.5rem;
+}
+.education .box .card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: noWrap;
+}
+
 /* Skills section starts from here */
 .skills {
   padding: 8rem 1rem;
   text-align: center;
+  min-height: 80vh;
 }
 
-.skills h1 {
+.skills h1{
   font-size: 2rem;
   color: var(--main-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 5.5rem;
 }
 .skills .title h1 span {
   color:white;
+ 
 }
 
 .box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -307,9 +329,10 @@ body {
   margin-bottom: 1rem;
 }
 
-.card p {
+.skills .box .card p {
   font-size: 0.9rem;
   line-height: 1.6;
+  
 }
 
 
@@ -678,6 +701,14 @@ button:hover {
   color: var(--background-color);
   white-space: noWrap;
 }
+
+/* Education section starts from here */
+.education {
+  min-height: 100vh;
+  margin-top: 20vh;
+  padding-top: 20vh;
+}
+
 
 /* Skills section starts from here */
 .skills {
