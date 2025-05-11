@@ -449,7 +449,7 @@ button:hover {
   }
 
   html, body {
-    overflow: hidden;
+    overflow: none;
     overflow-x: hidden;
     scroll-behavior: smooth;
    
@@ -704,9 +704,51 @@ button:hover {
 
 /* Education section starts from here */
 .education {
-  min-height: 100vh;
-  margin-top: 20vh;
-  padding-top: 20vh;
+  padding: 6rem 1rem;
+  text-align: center;
+  min-height:100vh;
+}
+.education .title{
+  margin-bottom: 4rem;
+}
+.skills .title h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1.5rem;
+}
+.education span{
+  color:white;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 
