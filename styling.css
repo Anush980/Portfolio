@@ -178,7 +178,7 @@ body {
   width: 24rem;
   height: 24rem;
   border-radius: 50%; 
-  transition: 0.3s ease-in, box-shadow 0.3s ease-out;
+  transition: 0.25s ease-in, box-shadow 0.25s ease-out;
 }
 .hero .right .heroLogo .circle:hover {
  box-shadow: 0 0 80px var(--box-shadow-hover);
@@ -194,7 +194,7 @@ body {
   width: 24rem;
   height: 24rem;
   border-radius: 50%;
-  transition: 0.3s ease-in, box-shadow 0.3s ease-out;
+  transition: 0.25s ease-in, box-shadow 0.25s ease-out;
 }
 
 /* About styling starts from here */
@@ -225,7 +225,12 @@ body {
    box-shadow:0 0 80px var(--box-shadow);
    transition: 0.3s ease-in, box-shadow 0.3s ease-out;
 }
-.about .container .left .circle:hover ,.about .container .left .circle img:hover{
+.about .container .left .circle:hover{
+  box-shadow:0 0 100px var(--box-shadow-hover);
+  width:18.5rem;
+  height:18.5rem;
+}
+.about .container .left .circle img:hover{
   box-shadow:0 0 100px var(--box-shadow-hover);
   width:18.5rem;
   height:18.5rem;
@@ -670,6 +675,12 @@ button:hover {
 }
 
 .about .container .left .circle img{
+  border-radius: 50%;
+  width:10rem;
+  height:10rem;
+}
+  
+.about .container .left .circle img:hover{
   border-radius: 50%;
   width:10rem;
   height:10rem;
