@@ -173,31 +173,32 @@ body {
 
 .hero .right .heroLogo .circle {
   border: 2px solid #00000063;
- box-shadow: 0 0 80px var(--box-shadow);
- inset:80 3;
+  box-shadow: 0 0 80px var(--box-shadow);
   width: 24rem;
   height: 24rem;
   border-radius: 50%; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.25s ease-in, box-shadow 0.25s ease-out;
 }
+
 .hero .right .heroLogo .circle:hover {
- box-shadow: 0 0 80px var(--box-shadow-hover);
- width:24.7rem;
- height: 24.7rem;
-}
-.hero .right .heroLogo .circle img:hover {
+  box-shadow: 0 0 80px var(--box-shadow-hover);
   width: 24.7rem;
   height: 24.7rem;
-  
 }
-.hero .right .heroLogo .circle img {
 
+
+.hero .right .heroLogo .circle img {
   object-fit: cover;
-  width: 24rem;
-  height: 24rem;
-  border-radius: 50%;
-  transition: 0.25s ease-in, box-shadow 0.25s ease-out;
+  width: 100%; 
+  height: 100%; 
+  border-radius: 50%; 
+  transition: 0.25s ease-in-out;
 }
+
 
 /* About styling starts from here */
 .about {
@@ -217,37 +218,37 @@ body {
  
  min-width: 30vw;
 }
-.about .container .left .circle{
-  margin:5% 0 0 35%;
-  z-index:100;
-  border: 2px solid #00000063;
-  border-radius: 50%;
-  width:18rem;
-   height: 18rem;
-   box-shadow:0 0 80px var(--box-shadow);
-   transition: 0.3s ease-in, box-shadow 0.3s ease-out;
+.about .container .left .circle {
+  margin: 5% 0 0 35%;
+  z-index: 100;
+  border: 2px solid #00000063; 
+  border-radius: 50%; 
+  width: 18rem;
+  height: 18rem;
+  box-shadow: 0 0 80px var(--box-shadow);
+  overflow: hidden; 
+  transition: 0.3s ease-in, box-shadow 0.3s ease-out; 
 }
-.about .container .left .circle:hover{
-  box-shadow:0 0 100px var(--box-shadow-hover);
-  width:18.5rem;
-  height:18.5rem;
-}
-.about .container .left .circle img:hover{
-  box-shadow:0 0 100px var(--box-shadow-hover);
-  width:18.5rem;
-  height:18.5rem;
-}
-.about .container .left .circle img{
-  border-radius: 50%;
-  width:18rem;
-  height:18rem;
-  transition: 0.3s ease-in, box-shadow 0.3s ease-out;
-}
+
 .about .container .left .circle:hover {
-  box-shadow: 0 0 80px var(--box-shadow-hover);
-  width:18.5rem;
+  box-shadow: 0 0 100px var(--box-shadow-hover); 
+  width: 18.5rem; 
   height: 18.5rem;
- }
+  transition: 0.3s ease-in-out; 
+}
+
+.about .container .left .circle img {
+  object-fit: cover; 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 50%; 
+  transition: 0.3s ease-in-out; 
+}
+
+.about .container .left .circle img:hover {
+  
+}
+
 .about .container .right {
   max-width: 50%;
 }
@@ -447,7 +448,7 @@ button:hover {
 
 
 /* media Query */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   * {
     margin: 0;
     padding: 0;
@@ -627,24 +628,30 @@ button:hover {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+    overflow: hidden;
   }
+  
   .hero .right .heroLogo .circle:hover {
     border: 2px solid rgb(78, 104, 74);
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
   }
-
+  
   .hero .right .heroLogo .circle img {
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
   }
+  
   .hero .right .heroLogo .circle img:hover {
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
   }
+  
 /* About styling starts from here */
 .about {
   min-height: 100vh;
@@ -665,33 +672,37 @@ button:hover {
   gap:2rem;
 }
 
-.about .container .left .circle{
-  
-  margin:0 auto;
-  z-index:100;
+.about .container .left .circle {
+  margin: 0 auto;
+  z-index: 100;
   border: 2px solid #00000063;
   border-radius: 50%;
-  width:10rem;
-   height: 10rem;
-   box-shadow:0 0 60px var(--box-shadow);
+  width: 10rem;
+  height: 10rem;
+  box-shadow: 0 0 60px var(--box-shadow);
+  overflow: hidden;
 }
 
-.about .container .left .circle img{
+.about .container .left .circle img {
   border-radius: 50%;
-  width:10rem;
-  height:10rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-  
-.about .container .left .circle img:hover{
+
+.about .container .left .circle img:hover {
   border-radius: 50%;
-  width:10rem;
-  height:10rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .about .container .left .circle:hover {
   box-shadow: 0 0 60px var(--box-shadow-hover);
-  width:10rem;
+  width: 10rem;
   height: 10rem;
- }
+}
+
 
 .about .container .right .aboutme{ 
  text-align: center;
