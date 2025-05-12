@@ -1,14 +1,10 @@
-window.addEventListener('load', function () {
-  var loader = document.getElementById('loader');
-  
-  // Wait for 3 seconds
-  setTimeout(function () {
-      loader.style.opacity = '0'; 
-  }, 400); 
 
-  setTimeout(function () {
-      loader.style.display = 'none';
-  }, 6000); 
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 700); 
 });
 
 
