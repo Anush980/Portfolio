@@ -227,8 +227,8 @@ body {
 }
 .about .container .left .circle:hover ,.about .container .left .circle img:hover{
   box-shadow:0 0 100px var(--box-shadow-hover);
-  width:18rem;
-  height:18rem;
+  width:18.5rem;
+  height:18.5rem;
 }
 .about .container .left .circle img{
   border-radius: 50%;
