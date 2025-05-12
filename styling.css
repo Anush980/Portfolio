@@ -191,6 +191,8 @@ body {
   
 }
 .hero .right .heroLogo .circle img {
+
+  object-fit: cover;
   width: 24rem;
   height: 24rem;
   border-radius: 50%;
