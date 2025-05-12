@@ -1,6 +1,21 @@
+window.addEventListener('load', function () {
+  var loader = document.getElementById('loader');
+  
+  // Wait for 3 seconds
+  setTimeout(function () {
+      loader.style.opacity = '0'; 
+  }, 400); 
+
+  setTimeout(function () {
+      loader.style.display = 'none';
+  }, 6000); 
+});
+
+
 
 //  for changing the active class
-  function changeActive(i) {
+ 
+function changeActive(i) {
     let navItems = document.getElementsByClassName("navItem");
     for(let j = 0; j < navItems.length; j++) {
       if(j == i) {
